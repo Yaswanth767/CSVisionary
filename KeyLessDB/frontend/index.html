@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KeyLessDB – Smart CSV Query Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>🔍 CSVisinory</h1>
+      <p>Query your CSV file using natural language.</p>
+    </header>
+
+    <section class="upload-section">
+      <label for="csvFile">📁 Upload CSV File</label>
+      <input type="file" id="csvFile" accept=".csv" />
+    </section>
+
+    <section class="query-section">
+      <label for="questionInput">💬 Ask a Question</label>
+      <input type="text" id="questionInput" placeholder="e.g., show all products except USA" />
+      <button onclick="handleQuery()">Ask</button>
+    </section>
+
+    <section id="output" class="output-section">
+     
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
